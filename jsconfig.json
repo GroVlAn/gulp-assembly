@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es2020",
+		"checkJs": true // Рекомендуется для проверки кода
+	},
+	"include": ["gulp/**/*"], // Укажите папку, где лежит ваш код
+	"exclude": ["node_modules", "dist"] // Исключите лишние папки
+}
