@@ -12,9 +12,9 @@ import { plumberNotify } from '../core/config.js';
 export const javascript = () => {
 	return gulp
 		.src([paths.src.js, paths.src.ts])
-		.pipe(changed(paths.build.js))
-		.pipe(plumber(plumberNotify('JavaScript')))
-		.pipe(babel())
-		.pipe(webpack(webpackConfig))
+		.pipe(changed(paths.build.js)) // Отслеживание изменений в корневой директории
+		.pipe(plumber(plumberNotify('JavaScript'))) // Обработка ошибок с выводом в консоль
+		.pipe(babel()) // Подключение babel
+		.pipe(webpack(webpackConfig)) // Подключение webpack
 		.pipe(gulp.dest(paths.build.js));
 };

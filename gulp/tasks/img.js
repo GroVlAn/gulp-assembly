@@ -10,9 +10,9 @@ import { config, plumberNotify } from '../core/config.js';
 export const imgDev = () => {
 	return gulp
 		.src(paths.src.img)
-		.pipe(changed(paths.build.img))
-		.pipe(plumber(plumberNotify('Images')))
-		.pipe(imgmin(config.img))
+		.pipe(changed(paths.build.img)) // Отслеживание изменений в корневой директории
+		.pipe(plumber(plumberNotify('Images'))) // Обработка ошибок с выводом в консоль
+		.pipe(imgmin(config.img)) // Сжатие картинок
 		.pipe(gulp.dest(paths.build.img));
 };
 
@@ -21,7 +21,7 @@ export const imgProd = () => {
 		.src(paths.src.img)
 		.pipe(plumber(plumberNotify('Images')))
 		.pipe(changed(paths.build.img))
-		.pipe(webp())
+		.pipe(webp()) // Конвертирует изображения в формат WebP для уменьшения размера файлов и ускорения загрузки
 		.pipe(gulp.dest(paths.build.img))
 
 		.pipe(gulp.src(paths.src.img))

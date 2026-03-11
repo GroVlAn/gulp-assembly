@@ -5,7 +5,7 @@ import { paths } from './paths.js';
 export const config = {
 	server: {
 		server: {
-			baseDir: paths.build.html,
+			baseDir: paths.build.root,
 		},
 		port: 8080,
 	},

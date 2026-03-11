@@ -9,7 +9,7 @@ export const paths = {
 		sourcemaps: '../sourcemaps/',
 	},
 	build: {
-		html: 'build/',
+		root: 'build/',
 		css: 'build/css/',
 		js: 'build/js/',
 		img: 'build/img/',
