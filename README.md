@@ -1,4 +1,4 @@
-# Gulp Assembly (Gulp + Webpack)
+# 🚀 Frontend Build System (Gulp + Webpack)
 
 Универсальная система сборки фронтенд-проекта на основе **Gulp**, включающая обработку HTML, JavaScript, TypeScript, SCSS и изображений.
 Проект также использует **Webpack** для сборки модулей и **Babel** для поддержки современных возможностей JavaScript.
