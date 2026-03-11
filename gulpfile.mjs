@@ -7,7 +7,7 @@ gulp.task(
 	'default',
 	gulp.series(
 		'clean:dev',
-		gulp.parallel('html:dev', 'style:dev', 'js:dev', 'img:dev'),
+		gulp.parallel('html:dev', 'style:dev', 'js:dev', 'img:dev', 'fonts:dev', 'sprites:dev'),
 		gulp.parallel('serve:dev', 'watch:dev'),
 	),
 );
@@ -16,7 +16,7 @@ gulp.task(
 	'prod',
 	gulp.series(
 		'clean:prod',
-		gulp.parallel('html:prod', 'style:prod', 'js:prod', 'img:prod'),
+		gulp.parallel('html:prod', 'style:prod', 'js:prod', 'img:prod', 'fonts:prod', 'sprites:prod'),
 		gulp.parallel('serve:prod'),
 	),
 );

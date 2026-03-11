@@ -38,6 +38,7 @@
 		"gulp-sass-glob": "^1.1.0",
 		"gulp-sourcemap": "^1.0.2",
 		"gulp-sourcemaps": "^3.0.0",
+		"gulp-svg-sprite": "^2.0.3",
 		"gulp-uglify-es": "^3.0.0",
 		"gulp-webp": "^5.1.0",
 		"gulp-webp-css": "^1.1.0",

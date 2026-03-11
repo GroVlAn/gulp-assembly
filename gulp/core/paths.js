@@ -5,6 +5,7 @@ export const paths = {
 		js: 'src/js/**/*.js',
 		ts: 'src/js/**/*.ts',
 		img: 'src/img/**/*.*',
+		svg: 'src/svg/**/*.*',
 		fonts: 'src/fonts/**/*.*',
 		sourcemaps: '../sourcemaps/',
 	},
@@ -13,6 +14,7 @@ export const paths = {
 		css: 'build/css/',
 		js: 'build/js/',
 		img: 'build/img/',
+		svg: 'build/img/',
 		fonts: 'build/fonts/',
 	},
 	watch: {
@@ -21,6 +23,7 @@ export const paths = {
 		js: 'src/js/**/*.js',
 		ts: 'src/js/**/*.ts',
 		img: 'src/img/**/*.*',
+		svg: 'src/svg/**/*.*',
 		fonts: 'src/fonts/**/*.*',
 	},
 };
