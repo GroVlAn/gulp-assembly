@@ -33,8 +33,7 @@
 
 ---
 
-я изображений
-
+```
 📂 Структура проекта
 project
 │
@@ -67,6 +66,7 @@ project
 ├── package.json
 ├── tsconfig.json
 └── webpack.config.js
+```
 
 # ⚙️ Установка
 
