@@ -1,6 +1,7 @@
 import gulp from 'gulp';
 import svg from 'gulp-svg-sprite';
 import plumber from 'gulp-plumber';
+import changed, { compareContents } from 'gulp-changed';
 
 import { paths } from '../core/paths.js';
 import { plumberNotify } from '../core/config.js';

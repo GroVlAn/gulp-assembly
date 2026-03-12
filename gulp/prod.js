@@ -16,4 +16,4 @@ gulp.task('clean:prod', cleanDist);
 gulp.task('js:prod', javascript);
 gulp.task('img:prod', imgProd);
 gulp.task('fonts:prod', fonts);
-gulp.task('sprites:prod', sprites);
+gulp.task('svg:prod', sprites);

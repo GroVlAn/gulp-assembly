@@ -18,7 +18,7 @@ gulp.task('clean:dev', cleanDist);
 gulp.task('js:dev', javascript);
 gulp.task('img:dev', imgDev);
 gulp.task('fonts:dev', fonts);
-gulp.task('sprites:dev', sprites);
+gulp.task('svg:dev', sprites);
 
 gulp.task('watch:dev', () => {
 	gulp.watch(paths.watch.scss, gulp.parallel('style:dev'));
